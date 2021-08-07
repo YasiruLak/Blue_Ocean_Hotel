@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="534.0" prefWidth="784.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.IncomeCustomizeController">
+   <children>
+      <ImageView fitHeight="534.0" fitWidth="808.0" opacity="0.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/IncomeReport.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="openAdminLoginPage" buttonType="RAISED" layoutX="14.0" layoutY="20.0" onAction="#loadAdminLogin" style="-fx-background-color: #e74c3c;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="openLandingPage1" buttonType="RAISED" layoutX="68.0" layoutY="20.0" onAction="#loadLanding" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <TableView layoutX="25.0" layoutY="79.0" opacity="0.8" prefHeight="200.0" prefWidth="752.0">
+        <columns>
+          <TableColumn prefWidth="60.0" text="Januwary" />
+          <TableColumn prefWidth="67.0" text="Februwary" />
+            <TableColumn prefWidth="52.0" text="March" />
+            <TableColumn prefWidth="55.0" text="Aprail" />
+            <TableColumn prefWidth="53.0" text="May" />
+            <TableColumn prefWidth="51.0" text="June" />
+            <TableColumn prefWidth="52.0" text="July" />
+            <TableColumn prefWidth="65.0" text="August" />
+            <TableColumn prefWidth="82.0" text="Septhember" />
+            <TableColumn prefWidth="72.0" text="Octomber" />
+            <TableColumn prefWidth="69.0" text="November" />
+            <TableColumn prefWidth="78.0" text="December" />
+            <TableColumn prefWidth="60.0" text="Januwary" />
+            <TableColumn prefWidth="60.0" text="Januwary" />
+            <TableColumn prefWidth="78.0" text="December" />
+        </columns>
+      </TableView>
+      <TableView layoutX="25.0" layoutY="320.0" opacity="0.8" prefHeight="200.0" prefWidth="480.0">
+         <columns>
+            <TableColumn prefWidth="68.0" text="2016" />
+            <TableColumn prefWidth="88.0" text="2017" />
+            <TableColumn prefWidth="78.0" text="2019" />
+            <TableColumn prefWidth="75.0" text="2020" />
+            <TableColumn prefWidth="86.0" text="2021" />
+            <TableColumn prefWidth="105.0" text="2018" />
+         </columns>
+      </TableView>
+      <Label layoutX="228.0" layoutY="15.0" text="Blue Ocean Hill Income Report" textFill="#5e390b">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Button layoutX="540.0" layoutY="399.0" mnemonicParsing="false" text="Print">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="685.0" layoutY="399.0" mnemonicParsing="false" text="Email">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="611.0" layoutY="399.0" mnemonicParsing="false" text="Export">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Label layoutX="540.0" layoutY="351.0" text="Get Report" textFill="#972727">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

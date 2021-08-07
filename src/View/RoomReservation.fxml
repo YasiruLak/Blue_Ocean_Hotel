@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="reserveContext" prefHeight="490.0" prefWidth="739.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RoomReservationController">
+   <children>
+      <ImageView fitHeight="279.0" fitWidth="739.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/roomsImazxzge.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="209.0" layoutY="10.0" prefHeight="36.0" prefWidth="209.0" text="Customer Details" textFill="#1951b2">
+         <font>
+            <Font name="System Bold" size="25.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtId" layoutX="31.0" layoutY="88.0" onAction="#moveToName" promptText="CustomID" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtContact" layoutX="31.0" layoutY="137.0" onAction="#moveToEmail" promptText="Contact" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNic" layoutX="31.0" layoutY="192.0" onAction="#moveToAddress" promptText="NIC" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" layoutX="201.0" layoutY="88.0" onAction="#moveToContact" promptText="Name" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtEmail" layoutX="201.0" layoutY="136.0" onAction="#moveToNic" promptText="Email" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" layoutX="201.0" layoutY="192.0" onAction="#moveToMeal" prefHeight="25.0" prefWidth="319.0" promptText="Addrss" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <TableView fx:id="tblCustomer" layoutX="6.0" layoutY="294.0" prefHeight="185.0" prefWidth="726.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="54.0" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="101.0" text="Name" />
+            <TableColumn fx:id="colContact" prefWidth="72.0" text="Contact" />
+            <TableColumn fx:id="colEmail" prefWidth="77.0" text="E-mail" />
+            <TableColumn fx:id="colNic" prefWidth="69.0" text="NIC" />
+            <TableColumn fx:id="colAddress" prefWidth="120.0" text="Address" />
+            <TableColumn fx:id="colMeal" prefWidth="78.0" text="Meal Type" />
+            <TableColumn fx:id="colRoom" prefWidth="83.0" text="Room Type" />
+            <TableColumn fx:id="colDelete" prefWidth="71.0" text="Delete" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSearch" layoutX="30.0" layoutY="250.0" prefHeight="30.0" prefWidth="475.0" promptText="Search Here" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="6.0" layoutY="5.0" onAction="#loadLandingPage" prefHeight="25.0" prefWidth="44.0" style="-fx-background-color: #DD3838;" text="Back" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSaveAndUpdate" buttonType="RAISED" layoutX="641.0" layoutY="199.0" onAction="#saveUpdateOnAction" prefHeight="36.0" prefWidth="77.0" style="-fx-background-color: #3498db;" text="Save" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="576.0" layoutY="28.0" onAction="#newCustomerOnAction" prefHeight="36.0" prefWidth="129.0" style="-fx-background-color: #27ae60;" text="+Add Customer" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="59.0" layoutY="5.0" onAction="#loadHome" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXTextField fx:id="txtRoom" layoutX="535.0" layoutY="88.0" promptText="Room Type" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtMeal" layoutX="361.0" layoutY="88.0" onAction="#moveToRoom" promptText="Meal Type" unFocusColor="BLACK">
+         <font>
+            <Font size="14.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="550.0" layoutY="201.0" prefHeight="34.0" prefWidth="77.0" style="-fx-background-color: #ff6b6b;" text="Modify" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="adminLoginContext" prefHeight="479.0" prefWidth="725.0" style="-fx-background-color: #bdc3c7;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.AdminLoginController">
+   <children>
+      <AnchorPane layoutY="-6.0" prefHeight="162.0" prefWidth="725.0">
+         <children>
+            <ImageView fitHeight="189.0" fitWidth="725.0" layoutY="-5.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/ChinaMealImage.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="17.0" onAction="#loadLandingPage" prefHeight="25.0" prefWidth="58.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="616.0" layoutY="104.0" onAction="#openMealCustomize" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #227093;" text="Meals" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+            <JFXTextArea editable="false" layoutX="14.0" layoutY="80.0" prefHeight="61.0" prefWidth="256.0" text="We have magically delicious for our Customers." unFocusColor="#bdc3c7">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="264.0" layoutY="15.0" text="Blue Ocean Hill Food" textFill="#061957">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="135.0" layoutX="335.0" layoutY="50.0" startX="-77.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="193.0" prefHeight="124.0" prefWidth="725.0">
+         <children>
+            <ImageView fitHeight="200.0" fitWidth="725.0" layoutY="-40.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/RoomsImages.jpg" />
+               </image>
+            </ImageView>
+            <JFXTextArea editable="false" layoutX="14.0" layoutY="29.0" prefHeight="70.0" prefWidth="235.0" text="The most memorable rest time starts here" unFocusColor="#bdc3c7">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+            </JFXTextArea>
+            <Label layoutX="260.0" layoutY="-30.0" text="Blue Ocean Hill Room" textFill="#061957">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <JFXButton buttonType="RAISED" layoutX="615.0" layoutY="64.0" onAction="#openRoomCustomize" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #227093;" text="Rooms" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+            <Line endX="142.0" layoutX="335.0" layoutY="10.0" startX="-80.0" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="395.0" prefHeight="86.0" prefWidth="725.0">
+         <children>
+            <ImageView fitHeight="175.0" fitWidth="725.0" layoutY="-78.0" opacity="0.6" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../Assets/IncomeImages.jpg" />
+               </image>
+            </ImageView>
+            <Label layoutX="253.0" layoutY="-70.0" text="Blue Ocean Hill Income" textFill="#061957">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+            <Line endX="145.0" layoutX="335.0" layoutY="-32.0" startX="-87.0" />
+            <JFXTextArea editable="false" layoutX="12.0" layoutY="-4.0" prefHeight="44.0" prefWidth="235.0" text="For your brighter future" unFocusColor="#bdc3c7">
+               <font>
+                  <Font name="Baskerville Old Face" size="18.0" />
+               </font>
+            </JFXTextArea>
+            <JFXButton buttonType="RAISED" layoutX="618.0" layoutY="39.0" onAction="#openIncomeCustomize" prefHeight="37.0" prefWidth="82.0" style="-fx-background-color: #227093;" text="Income" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+               <effect>
+                  <Blend />
+               </effect>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="receptionContext" prefHeight="409.0" prefWidth="614.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ReceptionLoginController">
+   <children>
+      <ImageView fitHeight="209.0" fitWidth="614.0" layoutY="1.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/roomsImazxzge.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="220.0" fitWidth="614.0" layoutY="210.0" opacity="0.3" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/maintain1.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="408.0" layoutY="78.0" text="Reserve Room">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="408.0" layoutY="292.0" text="Maintain Room">
+         <font>
+            <Font name="Arial Bold" size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnReserve" buttonType="RAISED" layoutX="438.0" layoutY="138.0" onAction="#loadReserve" style="-fx-background-color: #2980b9;" text="Reserve" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnMaintain" buttonType="RAISED" layoutX="438.0" layoutY="346.0" onAction="#loadMaintain" style="-fx-background-color: #2980b9;" text="Maintain" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="11.0" layoutY="10.0" onAction="#loadLandingPage" prefHeight="25.0" prefWidth="56.0" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="79.0" layoutY="49.0" prefHeight="27.0" prefWidth="254.0" text="We give you a legendary welcome," textFill="#4e63ae">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="71.0" prefHeight="27.0" prefWidth="200.0" text="every time you come back." textFill="#4e63ae">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="79.0" layoutY="14.0" prefHeight="35.0" prefWidth="81.0" text="About" textFill="#241c6f">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Separator layoutX="154.0" layoutY="39.0" prefWidth="200.0" />
+      <Label layoutX="27.0" layoutY="121.0" prefHeight="35.0" prefWidth="81.0" text="Mission" textFill="#241c6f">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="160.0" prefHeight="44.0" prefWidth="328.0" text="The mission of the Hotel Blue Ocean is to put hospitality services on the highest level in order to satisfy the demands and expectations of guests" textFill="#4e63ae">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="236.0" prefHeight="35.0" prefWidth="81.0" text="Vision" textFill="#241c6f">
+         <font>
+            <Font name="Baskerville Old Face" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="27.0" layoutY="275.0" prefHeight="44.0" prefWidth="328.0" text="The ideology of our vision is to continue to apply and set the highest standards of service quality and in that way justify and uphold the reputation that we have among the guests, partners, competitors and the wider community" textFill="#4e63ae">
+         <font>
+            <Font name="Baskerville Old Face" size="18.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

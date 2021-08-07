@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="maintainContext" prefHeight="366.0" prefWidth="554.0" style="-fx-background-color: #D9D9D9;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RoomMaintainController">
+   <children>
+      <ImageView fitHeight="366.0" fitWidth="554.0" layoutX="-1.0" layoutY="-1.0" opacity="0.3">
+         <image>
+            <Image url="@../Assets/maintain12.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="14.0" layoutY="14.0" onAction="#loadReceptionLogin" style="-fx-background-color: #DD3838;" text="Back" textFill="#f8f8f8">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="68.0" layoutY="14.0" onAction="#loadLanding" style="-fx-background-color: #16a085;" text="Home" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="264.0" layoutY="22.0" text="Room Maintenance" textFill="#27499a">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="117.0" text="Full Rooms">
+         <font>
+            <Font name="Baskerville Old Face" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="321.0" layoutY="189.0" text="Available Rooms">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="322.0" layoutY="269.0" text="UnAvailable Rooms">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Label>
+      <TextField layoutX="345.0" layoutY="214.0" prefHeight="42.0" prefWidth="90.0" text="   18">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField layoutX="345.0" layoutY="142.0" prefHeight="42.0" prefWidth="90.0" text="    25">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <TextField layoutX="345.0" layoutY="294.0" prefHeight="42.0" prefWidth="90.0" text="    7">
+         <font>
+            <Font name="System Bold" size="20.0" />
+         </font></TextField>
+      <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="282.0" layoutY="110.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Full%20Version.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="282.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Available.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="33.0" fitWidth="35.0" layoutX="282.0" layoutY="265.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Assets/Unavailable.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
